@@ -1,0 +1,39 @@
+.carouselItem {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: green;
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper img {
+  width: 300px;
+}
+
+.wrapper .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .content h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.content p {
+  word-break: break-all;
+  white-space: normal;
+  width: 60%;
+  text-align: center;
+}

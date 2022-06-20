@@ -1,0 +1,52 @@
+header {
+  background-color: #ccc;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+
+.icon {
+  height: 16px;
+  cursor: pointer;
+}
+
+.menuList {
+  display: flex;
+}
+
+.leftSide img {
+  width: 80%;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+}
+
+.rightSide > div {
+  margin-left: 20px;
+}
+
+.rightSide nav {
+  position: relative;
+}
+
+.rightSide nav::after {
+  content: '';
+  height: 20px;
+  width: 1px;
+  background-color: #323131;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menuList .menuItem a {
+  margin-right: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+}
