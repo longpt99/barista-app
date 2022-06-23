@@ -1,0 +1,29 @@
+.wrapper {
+  width: 30%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.content span {
+  font-size: 3rem;
+  font-style: italic;
+  color: #c7a17a;
+  margin-right: 10px;
+}
+
+.content h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.content p {
+  font-weight: 300;
+}
+
+.wrapper .btn {
+  color: #c7a17a;
+  font-weight: 700;
+}

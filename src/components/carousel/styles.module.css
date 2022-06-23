@@ -12,6 +12,30 @@
   display: flex;
   justify-content: center;
   position: absolute;
+  bottom: 20px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.indicators > button {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: solid 1px #fff;
+  padding: 0;
+  transition: all 0.3s;
+}
+
+.indicators > button:last-child {
+  margin-right: unset;
+}
+
+.indicators > button:hover {
+  background-color: #fff;
+  opacity: 0.6;
 }
 
 .directionIcon {

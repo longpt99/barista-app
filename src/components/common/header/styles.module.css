@@ -1,5 +1,8 @@
 header {
-  background-color: #ccc;
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .header {
@@ -17,13 +20,22 @@ header {
   display: flex;
 }
 
+.leftSide {
+  display: flex;
+  align-items: center;
+}
+
 .leftSide img {
-  width: 80%;
+  width: 50%;
 }
 
 .rightSide {
   display: flex;
   align-items: center;
+}
+
+.rightSide div > img {
+  filter: invert(1);
 }
 
 .rightSide > div {
@@ -49,4 +61,5 @@ header {
   margin-right: 20px;
   display: inline-block;
   text-transform: uppercase;
+  color: #fff;
 }

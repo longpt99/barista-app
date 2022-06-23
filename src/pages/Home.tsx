@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import CarouselItem from '../components/carousel-item/CarouselItem';
 import Carousel from '../components/carousel/Carousel';
 import Header from '../components/common/header/Header';
+import Reservation from '../components/home/reservation/Reservation';
 
 export default function HomePage() {
   const contents = [
@@ -20,18 +21,18 @@ export default function HomePage() {
       image: '/assets/images/home-1-slider-img-2.jpg',
     },
     {
-      title: 'The home of coffee',
-      description:
-        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo in officia molestias, ipsa culpa corporis iusto?',
-      logo: '/assets/images/home-1-slider-img-3.png',
-      image: '/assets/images/main.jpg',
-    },
-    {
       title: 'Brewed to perfection',
       description:
         'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo in officia molestias, ipsa culpa corporis iusto?',
       logo: '/assets/images/home-1-slider-img-4.png',
       image: '/assets/images/home-1-slider-4.jpg',
+    },
+    {
+      title: 'The home of coffee',
+      description:
+        'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio illo in officia molestias, ipsa culpa corporis iusto?',
+      logo: '/assets/images/home-1-slider-img-2.png',
+      image: '/assets/images/main.jpg',
     },
   ];
 
@@ -43,6 +44,7 @@ export default function HomePage() {
           <CarouselItem key={index}>{item}</CarouselItem>
         ))}
       </Carousel>
+      <Reservation />
     </Fragment>
   );
 }

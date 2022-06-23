@@ -34,19 +34,12 @@ export default function Carousel({ children }: ICarouselProps) {
   // });
 
   return (
-    <div
-      className={styles.carousel}
-      // onMouseEnter={() => setPaused(true)}
-      // onMouseLeave={() => setPaused(false)}
-    >
-      <div
-        className={styles.inner}
-        style={{
-          transform: `translateX(-${activeIndex * 100}%)`,
-        }}
-      >
+    <div className={styles.carousel}>
+      <div className={styles.inner}>
         {React.Children.map(children, (child, index) => {
-          return React.cloneElement(child, { width: '100%' });
+          return React.cloneElement(child, {
+            display: activeIndex === index ? 'inline-flex' : 'none',
+          });
         })}
       </div>
       <div className={styles.direction}>
@@ -78,9 +71,10 @@ export default function Carousel({ children }: ICarouselProps) {
       <div className={styles.indicators}>
         {React.Children.map(children, (child, index) => {
           return (
-            <button className="" onClick={() => updateIndex(index)}>
-              {index + 1}
-            </button>
+            <button
+              style={{ backgroundColor: activeIndex === index ? '#fff' : '' }}
+              onClick={() => updateIndex(index)}
+            ></button>
           );
         })}
       </div>

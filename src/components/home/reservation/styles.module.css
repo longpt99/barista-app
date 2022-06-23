@@ -1,0 +1,28 @@
+.container > p,
+.container > h2 {
+  text-align: center;
+}
+
+.container {
+  background-color: #eae7de;
+  padding: 60px;
+}
+
+.container > p {
+  font-style: italic;
+  color: #c7a17a;
+  font-size: 1.2rem;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #30271c;
+  line-height: 5rem;
+  font-weight: 800;
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-between;
+}
