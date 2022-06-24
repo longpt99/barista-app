@@ -2,7 +2,9 @@ import { Fragment } from 'react';
 import CarouselItem from '../components/carousel-item/CarouselItem';
 import Carousel from '../components/carousel/Carousel';
 import Header from '../components/common/header/Header';
+import Application from '../components/home/application/Application';
 import Reservation from '../components/home/reservation/Reservation';
+import Operators from '../components/home/step/Step';
 
 export default function HomePage() {
   const contents = [
@@ -45,6 +47,8 @@ export default function HomePage() {
         ))}
       </Carousel>
       <Reservation />
+      <Application />
+      <Operators />
     </Fragment>
   );
 }

@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: 10% auto;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.content p {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1rem;
+  font-weight: 300;
+}
